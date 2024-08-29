@@ -13,9 +13,10 @@
 <body>
     <!-- タグごとのチェックボックス -->
     <div>
-        <label><input type="checkbox" id="all" checked> 全て</label>
-        <label><input type="checkbox" id="restaurants"> 飲食店</label>
-        <label><input type="checkbox" id="tourist-attractions"> 観光地</label>
+        <button id="allcheck">全てにチェックをつける</button>
+        <button id="alluncheck">全てのチェックを外す</button>
+        <label><input type="checkbox" id="restaurants" checked> 飲食店</label>
+        <label><input type="checkbox" id="tourist-attractions" checked> 観光地</label>
     </div>
 
     <div id="map" style="width: 100%; height: 500px;"></div>
@@ -29,8 +30,9 @@
     <script>
 
         // 「全て」にチェックを入れれば、他のチェックボックスも自動でチェックされる。「全て」のチェックを外せば、他のチェックボックスも自動で外れる。
-        document.getElementById('all').addEventListener('change', consistentMarkers);
-        document.getElementById('all').addEventListener('change', filterMarkers);
+        document.getElementById('allcheck').addEventListener('click', checkall);
+        document.getElementById('alluncheck').addEventListener('click', uncheckall);
+
         document.getElementById('restaurants').addEventListener('change', filterMarkers);
         document.getElementById('tourist-attractions').addEventListener('change', filterMarkers);
 
@@ -40,7 +42,6 @@
             attribution: '© OpenStreetMap contributors'
         }).addTo(map);
         var MAP_MAKERS = {};
-
 
         var explainInfo = {};
 
@@ -71,8 +72,7 @@
         }
 
         function addImageMarker(imageElement, imageName, explainInfo) {
-            console.log("画像の位置情報を取得します");
-            EXIF.getData(imageElement, function () {
+                        EXIF.getData(imageElement, function () {
                 var lat = EXIF.getTag(this, "GPSLatitude");
                 var lon = EXIF.getTag(this, "GPSLongitude");
 
@@ -102,32 +102,31 @@
             MAP_MAKERS[imageName].remove();
         }
 
-function consistentMarkers() {
-            // 「全て」のチェックボックスが変更されたときに、他のチェックボックスとの一貫性を保つための関数
-            const showAll = document.getElementById('all').checked;
+function checkall() {
+                        const showRestaurants = document.getElementById('restaurants').checked;
+            const showAttractions = document.getElementById('tourist-attractions').checked;
+                            document.getElementById('restaurants').checked = true;
+                document.getElementById('tourist-attractions').checked = true;
+            filterMarkers()
+        }
+
+        function uncheckall() {
             const showRestaurants = document.getElementById('restaurants').checked;
             const showAttractions = document.getElementById('tourist-attractions').checked;
-            if (showAll) {
-                document.getElementById('restaurants').checked = true;
-                document.getElementById('tourist-attractions').checked = true;
-            } else {
                 document.getElementById('restaurants').checked = false;
                 document.getElementById('tourist-attractions').checked = false;
-
-            }
+filterMarkers()
         }
 
         function filterMarkers() {
-            const showAll = document.getElementById('all').checked;
-            const showRestaurants = document.getElementById('restaurants').checked;
+                        const showRestaurants = document.getElementById('restaurants').checked;
             const showAttractions = document.getElementById('tourist-attractions').checked;
 
             for (let imageName in MAP_MAKERS) {
                 const marker = MAP_MAKERS[imageName];
                 const info = explainInfo[imageName];
-                console.log(imageName);
-
-                if (showAll || (showRestaurants && info.tags.includes("飲食店")) || (showAttractions && info.tags.includes("観光地"))) {
+                
+                if ((showRestaurants && info.tags.includes("飲食店")) || (showAttractions && info.tags.includes("観光地"))) {
                     marker.addTo(map);
                 } else {
                     marker.remove();

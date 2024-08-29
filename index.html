@@ -304,8 +304,8 @@
                         iconSize: [50, 50],
                         iconAnchor: [25, 25]
                     });
-
                     var marker = L.marker([lat, lon], { icon: imageIcon }).addTo(map);
+                    marker.getElement().style.border = '2px solid white';
                     MAP_MAKERS[imageName] = marker;
                     if (explainInfo) {
                         display_str = make_title_display_str(explainInfo);
@@ -358,8 +358,30 @@
             var image = '<br><a href="images/' + explainInfo.image_name + '" data-lightbox="image-' + explainInfo.image_name + '">画像を拡大</a>';
             return title + description + url + image;
         }
-        // var zoomLevel = map.getZoom();
-        // console.log('Zoom Level:', zoomLevel);
+        // 以下のコードはZoom Levelに応じてアイコンのサイズを変更するコード。
+        // 実装してみたが、思ったように綺麗に動作しなかったのでコメントアウトしている。
+        // map.on('zoomend', function () {
+        //     var zoomLevel = map.getZoom();
+        //     console.log('Zoom Level:', zoomLevel);
+        //     var imageElements = document.images;
+        //     for (var i = 0; i < imageElements.length; i++) {
+        //         var imageElement = imageElements[i];
+        //         var marker = MAP_MAKERS[imageElement.id];
+        //         if (marker) {
+        //             var iconSize = [50, 50]; // Default icon size
+        //             if (zoomLevel > 10) {
+        //                 iconSize = [100, 100]; // Increase icon size for higher zoom levels
+        //             } else if (zoomLevel < 5) {
+        //                 iconSize = [25, 25]; // Decrease icon size for lower zoom levels
+        //             }
+        //             marker.setIcon(L.icon({
+        //                 iconUrl: 'images/' + imageElement.id + '.jpg',
+        //                 iconSize: iconSize,
+        //                 iconAnchor: [iconSize[0] / 2, iconSize[1] / 2]
+        //             }));
+        //         }
+        //     }
+        // });
         loadJson();
     </script>
 </body>

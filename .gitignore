@@ -1,0 +1,5 @@
+.DS_Store
+original_images/*.jpg
+original_images/*.jpeg
+original_images/*.HEIC
+obsolete

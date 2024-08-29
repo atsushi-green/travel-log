@@ -1,0 +1,33 @@
+{
+    "02_01_可否屋葡瑠満": {
+        "title": "可否屋葡瑠満のアップルパイ",
+        "date": "2024-08-04",
+        "image_name": "02_01_可否屋葡瑠満.jpg",
+        "description": "和モダンな雰囲気のカフェで、アップルパイを食べました。",
+        "tags": [
+            "飲食店",
+            "観光地"
+        ],
+        "url": "http://cafe-buruman.cafe.coocan.jp/"
+    },
+    "26_01_下鴨神社": {
+        "title": "下鴨神社",
+        "date": "2022-11-18",
+        "image_name": "26_01_下鴨神社.jpg",
+        "description": "秋の紅葉が美しい。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.shimogamo-jinja.or.jp/"
+    },
+    "13_01_東京タワー": {
+        "title": "東京タワー",
+        "date": "2019-12-23",
+        "image_name": "13_01_東京タワー.jpg",
+        "description": "ライトアップが綺麗。<br>展望台には底がガラス張りのスペースがあり、足元が見える。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.tokyotower.co.jp/"
+    }
+}

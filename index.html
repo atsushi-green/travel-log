@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-Log</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+</head>
+
+<body>
+    <!-- タグごとのチェックボックス -->
+    <div>
+        <label><input type="checkbox" id="all" checked> 全て</label>
+        <label><input type="checkbox" id="restaurants"> 飲食店</label>
+        <label><input type="checkbox" id="tourist-attractions"> 観光地</label>
+    </div>
+
+    <div id="map" style="width: 100%; height: 500px;"></div>
+
+    <img id="02_01_可否屋葡瑠満" src="images/02_01_可否屋葡瑠満.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_01_東京タワー" src="images/13_01_東京タワー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_01_下鴨神社" src="images/26_01_下鴨神社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+
+    <script>
+
+        // 「全て」にチェックを入れれば、他のチェックボックスも自動でチェックされる。「全て」のチェックを外せば、他のチェックボックスも自動で外れる。
+        document.getElementById('all').addEventListener('change', consistentMarkers);
+        document.getElementById('all').addEventListener('change', filterMarkers);
+        document.getElementById('restaurants').addEventListener('change', filterMarkers);
+        document.getElementById('tourist-attractions').addEventListener('change', filterMarkers);
+
+
+        var map = L.map('map').setView([35.02352791752294, 135.7633984809353], 5);//デフォルト13
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        var MAP_MAKERS = {};
+
+
+        var explainInfo = {};
+
+        async function loadJson() {
+            try {
+                const response = await fetch('docs/explain.json');
+                explainInfo = await response.json();
+                updateMarkers();
+            } catch (error) {
+                console.error('Failed to load JSON:', error);
+            }
+        }
+
+        function updateMarkers() {
+            const imageElements = document.images;
+            for (let i = 0; i < imageElements.length; i++) {
+                const imageElement = imageElements[i];
+                let info = explainInfo[imageElement.id];
+                if (imageElement.complete) {
+                    addImageMarker(imageElement, imageElement.id, info);
+                } else {
+                    imageElement.onload = function () {
+                        addImageMarker(imageElement, imageElement.id, info);
+                    }
+                }
+            }
+            filterMarkers();
+        }
+
+        function addImageMarker(imageElement, imageName, explainInfo) {
+            console.log("画像の位置情報を取得します");
+            EXIF.getData(imageElement, function () {
+                var lat = EXIF.getTag(this, "GPSLatitude");
+                var lon = EXIF.getTag(this, "GPSLongitude");
+
+                if (lat && lon) {
+                    var latRef = EXIF.getTag(this, "GPSLatitudeRef") || "N";
+                    var lonRef = EXIF.getTag(this, "GPSLongitudeRef") || "E";
+                    lat = (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1);
+                    lon = (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1);
+
+                    var imageIcon = L.icon({
+                        iconUrl: 'images/' + imageName + '.jpg',
+                        iconSize: [50, 50],
+                        iconAnchor: [25, 25]
+                    });
+
+                    var marker = L.marker([lat, lon], { icon: imageIcon }).addTo(map);
+                    MAP_MAKERS[imageName] = marker;
+                    if (explainInfo) {
+                        display_str = make_title_display_str(explainInfo);
+                        marker.bindPopup(display_str);
+                    }
+                }
+            });
+        }
+
+        function removeMarkers(imageName) {
+            MAP_MAKERS[imageName].remove();
+        }
+
+function consistentMarkers() {
+            // 「全て」のチェックボックスが変更されたときに、他のチェックボックスとの一貫性を保つための関数
+            const showAll = document.getElementById('all').checked;
+            const showRestaurants = document.getElementById('restaurants').checked;
+            const showAttractions = document.getElementById('tourist-attractions').checked;
+            if (showAll) {
+                document.getElementById('restaurants').checked = true;
+                document.getElementById('tourist-attractions').checked = true;
+            } else {
+                document.getElementById('restaurants').checked = false;
+                document.getElementById('tourist-attractions').checked = false;
+
+            }
+        }
+
+        function filterMarkers() {
+            const showAll = document.getElementById('all').checked;
+            const showRestaurants = document.getElementById('restaurants').checked;
+            const showAttractions = document.getElementById('tourist-attractions').checked;
+
+            for (let imageName in MAP_MAKERS) {
+                const marker = MAP_MAKERS[imageName];
+                const info = explainInfo[imageName];
+                console.log(imageName);
+
+                if (showAll || (showRestaurants && info.tags.includes("飲食店")) || (showAttractions && info.tags.includes("観光地"))) {
+                    marker.addTo(map);
+                } else {
+                    marker.remove();
+                }
+            }
+        }
+
+        function make_title_display_str(explainInfo) {
+            var title = '<h2>' + explainInfo.title + '</h2>';
+            var description = explainInfo.description ? '<p>' + explainInfo.description + '</p>' : '';
+            var url = explainInfo.url ? '<a href="' + explainInfo.url + '" target="_blank">詳細を見る</a>' : '';
+            var image = '<br><a href="images/' + explainInfo.image_name + '" data-lightbox="image-' + explainInfo.image_name + '">画像を拡大</a>';
+            return title + description + url + image;
+        }
+// var zoomLevel = map.getZoom();
+        // console.log('Zoom Level:', zoomLevel);
+        loadJson();
+    </script>
+</body>
+
+</html>

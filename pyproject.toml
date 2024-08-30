@@ -3,12 +3,16 @@ name = "travel-log"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
-    { name = "atsushi", email = "green515tea@gmail.com" }
+    { name = "redtea", email = "green515tea@gmail.com" }
 ]
 dependencies = [
     "piexif>=1.1.3",
     "Pillow>=10.4.0",
     "pillow_heif>=0.18.0",
+    "opencv-python>=4.10.0.84",
+    "face_recognition>=1.3.0",
+    "face_recognition_models @ git+https://github.com/ageitgey/face_recognition_models",
+    "face-recognition>=1.3.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -20,6 +24,9 @@ build-backend = "hatchling.build"
 [tool.rye]
 managed = true
 dev-dependencies = []
+
+[tool.rye.dependencies]
+face_recognition_models = {git = "https://github.com/ageitgey/face_recognition_models"}
 
 [tool.hatch.metadata]
 allow-direct-references = true

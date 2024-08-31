@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel-Log</title>
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/atsushi-green/travel_log/main/assets/travel-log.png">
+    <meta property="og:description" content="Travel-Log">
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/129949522?v=4">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
@@ -243,125 +247,386 @@
     <img id="13_01_東京タワー" src="images/13_01_東京タワー.jpg"
         style="width: 1px; height: 1px; position: absolute; top: -1000px;">
     <img id="26_01_下鴨神社" src="images/26_01_下鴨神社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_01_ひたち海浜公園_クレープ" src="images/08_01_ひたち海浜公園_クレープ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_01_ひたち海浜公園_ネモフィラ" src="images/08_01_ひたち海浜公園_ネモフィラ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_02_小林桜" src="images/08_02_小林桜.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_03_大洗海岸" src="images/08_03_大洗海岸.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_04_大洗海鮮市場" src="images/08_04_大洗海鮮市場.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_05_JAXAつくば宇宙センター" src="images/08_05_JAXAつくば宇宙センター.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_06_JAXA社食" src="images/08_06_JAXA社食.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_07_クーロンヌ_ソーセージフランス" src="images/08_07_クーロンヌ_ソーセージフランス.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_08_つくば植物園" src="images/08_08_つくば植物園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_09_アミーチピッツェリア" src="images/08_09_アミーチピッツェリア.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_10_JAXA宇宙センター" src="images/08_10_JAXA宇宙センター.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="08_11_大洗磯前神社" src="images/08_11_大洗磯前神社.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="09_01_福客来_餃子" src="images/09_01_福客来_餃子.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="09_02_宇都宮みんみん_餃子" src="images/09_02_宇都宮みんみん_餃子.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="09_03_日光東照宮" src="images/09_03_日光東照宮.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="09_04_あしかがフラワーパーク_白藤" src="images/09_04_あしかがフラワーパーク_白藤.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="09_05_あしかがフラワーパーク_藤" src="images/09_05_あしかがフラワーパーク_藤.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="10_01_草津温泉" src="images/10_01_草津温泉.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="10_02_四万川ダム" src="images/10_02_四万川ダム.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="10_03_十割そば" src="images/10_03_十割そば.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="10_04_草津温泉" src="images/10_04_草津温泉.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="10_05_どんぐり" src="images/10_05_どんぐり.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="11_01_川越まつり会館" src="images/11_01_川越まつり会館.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="11_02_秩父味噌新井武平商店" src="images/11_02_秩父味噌新井武平商店.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="11_03_時の鐘" src="images/11_03_時の鐘.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_01_川豊_うなぎ" src="images/12_01_川豊_うなぎ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_02_山新勝寺" src="images/12_02_山新勝寺.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_03_るうふ清之家" src="images/12_03_るうふ清之家.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_04_るうふ清之家" src="images/12_04_るうふ清之家.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_05_鴨川シーワールド" src="images/12_05_鴨川シーワールド.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_06_海ほたる" src="images/12_06_海ほたる.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_07_海ほたる" src="images/12_07_海ほたる.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_08_海ほたる" src="images/12_08_海ほたる.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_09_幕張メッセ" src="images/12_09_幕張メッセ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_10_千倉オレンジセンター_みかん狩り" src="images/12_10_千倉オレンジセンター_みかん狩り.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_11_高家神社" src="images/12_11_高家神社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_12_千倉温泉千倉館" src="images/12_12_千倉温泉千倉館.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_13_館山マラソン" src="images/12_13_館山マラソン.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="12_14相浜組合直売所_金目鯛" src="images/12_14相浜組合直売所_金目鯛.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_02_玉川大学" src="images/13_02_玉川大学.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_03_レンボーブリッジ" src="images/13_03_レンボーブリッジ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_04_新丸ビル_こなから" src="images/13_04_新丸ビル_こなから.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_05_芝浦中央公園" src="images/13_05_芝浦中央公園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_06_都内一番の坂" src="images/13_06_都内一番の坂.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_07_表参道" src="images/13_07_表参道.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_08_カフェミケランジェロ" src="images/13_08_カフェミケランジェロ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_09_コットンクラブ" src="images/13_09_コットンクラブ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_10_警視庁" src="images/13_10_警視庁.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_11_国会議事堂" src="images/13_11_国会議事堂.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_12_ヴィーナスフォート" src="images/13_12_ヴィーナスフォート.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_13_羽田空港" src="images/13_13_羽田空港.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_14_東京ビッグサイト" src="images/13_14_東京ビッグサイト.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_15_東京スカイツリー" src="images/13_15_東京スカイツリー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_16_すみだ水族館" src="images/13_16_すみだ水族館.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_17_高橋家" src="images/13_17_高橋家.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_18_丸の内" src="images/13_18_丸の内.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_19_丸の内" src="images/13_19_丸の内.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_20_東京工業大学" src="images/13_20_東京工業大学.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_21_国立新美術館" src="images/13_21_国立新美術館.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_22_俺のフレンチ" src="images/13_22_俺のフレンチ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_23_SOMPO美術館" src="images/13_23_SOMPO美術館.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_24_皇居" src="images/13_24_皇居.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_25_BLUENOTE" src="images/13_25_BLUENOTE.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_26_高尾山ロープウェイ" src="images/13_26_高尾山ロープウェイ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_27_高尾山山頂" src="images/13_27_高尾山山頂.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_28_ロイヤルパークホテル" src="images/13_28_ロイヤルパークホテル.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_29_ワインダイニングダイヤモンドフィッシュ" src="images/13_29_ワインダイニングダイヤモンドフィッシュ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_30_上野恩賜公園" src="images/13_30_上野恩賜公園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_31_東京大学" src="images/13_31_東京大学.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_32_カレー" src="images/13_32_カレー.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_33_浅草寺" src="images/13_33_浅草寺.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_34_浅草花やしき" src="images/13_34_浅草花やしき.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_35_浅草" src="images/13_35_浅草.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_36_曳舟中華" src="images/13_36_曳舟中華.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_37_日の出町緑地野球場" src="images/13_37_日の出町緑地野球場.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_38_恵比寿ガーデンプレイス" src="images/13_38_恵比寿ガーデンプレイス.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_39_居酒屋もっと" src="images/13_39_居酒屋もっと.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_40_ボナペティート" src="images/13_40_ボナペティート.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_41_吉備子屋" src="images/13_41_吉備子屋.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_42_隅田川花火大会" src="images/13_42_隅田川花火大会.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_43_東向島" src="images/13_43_東向島.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="13_99_東京駅" src="images/13_99_東京駅.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_01_新潟駅_ぽんしゅ館" src="images/15_01_新潟駅_ぽんしゅ館.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_02_新潟駅_魚沼釜蔵総" src="images/15_02_新潟駅_魚沼釜蔵総.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_03_イタリアン" src="images/15_03_イタリアン.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_04_日本酒" src="images/15_04_日本酒.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_05_佐渡汽船" src="images/15_05_佐渡汽船.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_06_佐渡金山" src="images/15_06_佐渡金山.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_07_砂金体験" src="images/15_07_砂金体験.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_08_たらい舟" src="images/15_08_たらい舟.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_09_ぶりカツ丼" src="images/15_09_ぶりカツ丼.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_10_トキの森公園" src="images/15_10_トキの森公園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_11_佐渡汽船2" src="images/15_11_佐渡汽船2.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_12_佐渡汽船3" src="images/15_12_佐渡汽船3.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="15_13_新潟市" src="images/15_13_新潟市.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_01_仁和寺" src="images/26_01_仁和寺.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_02_祇園八寸" src="images/26_02_祇園八寸.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_03_時代祭" src="images/26_03_時代祭.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_04_鞍馬" src="images/26_04_鞍馬.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_05_貴船神社" src="images/26_05_貴船神社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_05_道の駅舟屋の里" src="images/26_05_道の駅舟屋の里.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_06_伊根" src="images/26_06_伊根.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_07_叡山電鉄" src="images/26_07_叡山電鉄.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_08_叡山電鉄" src="images/26_08_叡山電鉄.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_09_おちゃやのかか_アイスコーヒー" src="images/26_09_おちゃやのかか_アイスコーヒー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_100_南禅寺水路閣" src="images/26_100_南禅寺水路閣.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_101_平等院" src="images/26_101_平等院.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_102_中村藤吉" src="images/26_102_中村藤吉.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_10_天橋立ロープウェイ" src="images/26_10_天橋立ロープウェイ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_11_天橋立ビューランド" src="images/26_11_天橋立ビューランド.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_12_保津川下り" src="images/26_12_保津川下り.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_13_保津川下り" src="images/26_13_保津川下り.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_14_保津川下り" src="images/26_14_保津川下り.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_15_峯風堂" src="images/26_15_峯風堂.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_16_かき小屋フィーバー" src="images/26_16_かき小屋フィーバー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_17_祇園祭" src="images/26_17_祇園祭.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_18_祇園祭" src="images/26_18_祇園祭.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_19_うしのほねあなざ" src="images/26_19_うしのほねあなざ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_20_ガーデンミュージアム比叡" src="images/26_20_ガーデンミュージアム比叡.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_21_サントリービール工場" src="images/26_21_サントリービール工場.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_22_サントリービール工場" src="images/26_22_サントリービール工場.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_23_Apple京都" src="images/26_23_Apple京都.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_24_下鴨神社" src="images/26_24_下鴨神社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_25_あんびしゃす花" src="images/26_25_あんびしゃす花.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_26_山﨑ウヰスキー工場" src="images/26_26_山﨑ウヰスキー工場.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_27_山﨑ウヰスキー工場" src="images/26_27_山﨑ウヰスキー工場.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_28_寿司" src="images/26_28_寿司.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_29_京都ノーザンチャーチ" src="images/26_29_京都ノーザンチャーチ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_30_キャピタル東洋亭" src="images/26_30_キャピタル東洋亭.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_31_東寺" src="images/26_31_東寺.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_32_コーヒーハウスナカザワ" src="images/26_32_コーヒーハウスナカザワ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_33_錦へんこつ" src="images/26_33_錦へんこつ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_34_極鶏" src="images/26_34_極鶏.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_35_ぎおん徳屋" src="images/26_35_ぎおん徳屋.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_36_比叡山" src="images/26_36_比叡山.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_37_京都タワー" src="images/26_37_京都タワー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_38_ギア" src="images/26_38_ギア.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_39_銀之塔_ビーフシチュー" src="images/26_39_銀之塔_ビーフシチュー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_40_京都国立博物館" src="images/26_40_京都国立博物館.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_41_円山公園" src="images/26_41_円山公園.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_42_梅小路公園" src="images/26_42_梅小路公園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_43_西京極総合運動公園" src="images/26_43_西京極総合運動公園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_44_ブルームコーヒー" src="images/26_44_ブルームコーヒー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_45_京北森林公園" src="images/26_45_京北森林公園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_46_上賀茂神社" src="images/26_46_上賀茂神社.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_47_粟田山荘" src="images/26_47_粟田山荘.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_48_川床" src="images/26_48_川床.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_49_鴨川" src="images/26_49_鴨川.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_50_北山紅茶館" src="images/26_50_北山紅茶館.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_52_本家根元かざりや" src="images/26_52_本家根元かざりや.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_53_今宮神社" src="images/26_53_今宮神社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_54_祇園晩餐京色" src="images/26_54_祇園晩餐京色.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_55_京都水族館" src="images/26_55_京都水族館.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_56_嵐山うどんおづる" src="images/26_56_嵐山うどんおづる.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_57_竹林の小径" src="images/26_57_竹林の小径.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_58_よーじやカフェ" src="images/26_58_よーじやカフェ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_59_トロッコ列車" src="images/26_59_トロッコ列車.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_60_トロッコ列車" src="images/26_60_トロッコ列車.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_61_エルマールまいづる" src="images/26_61_エルマールまいづる.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_62_海望亭_カレー" src="images/26_62_海望亭_カレー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_63_舞鶴赤れんがパーク" src="images/26_63_舞鶴赤れんがパーク.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_64_成相寺" src="images/26_64_成相寺.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_65_知恩寺" src="images/26_65_知恩寺.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_66_日本三景碑" src="images/26_66_日本三景碑.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_67_黒糖ソフト" src="images/26_67_黒糖ソフト.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_68_いさみ寿し" src="images/26_68_いさみ寿し.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_69_魏飯夷堂" src="images/26_69_魏飯夷堂.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_70_KEIZO" src="images/26_70_KEIZO.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_71_プレマルシェ" src="images/26_71_プレマルシェ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_72_MarieBelle" src="images/26_72_MarieBelle.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_73_ADSUMMUM_ボルダリング" src="images/26_73_ADSUMMUM_ボルダリング.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_74_トキシラズ" src="images/26_74_トキシラズ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_75_.二条城HEIC" src="images/26_75_.二条城HEIC.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_76_ローム" src="images/26_76_ローム.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_77_イスタンブール" src="images/26_77_イスタンブール.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_78_慈照寺" src="images/26_78_慈照寺.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_79_ゴスペル" src="images/26_79_ゴスペル.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_80_二条城" src="images/26_80_二条城.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_81_稲荷山" src="images/26_81_稲荷山.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_82_伏見稲荷" src="images/26_82_伏見稲荷.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_83_ドラゴンバーガー" src="images/26_83_ドラゴンバーガー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_84_高野川" src="images/26_84_高野川.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_85_高野川" src="images/26_85_高野川.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_86_京都市植物園" src="images/26_86_京都市植物園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_87_YAOISO" src="images/26_87_YAOISO.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_88_八代目儀兵衛" src="images/26_88_八代目儀兵衛.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_89_生きているコーヒー" src="images/26_89_生きているコーヒー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_90_ダニエルズ_アマトリチャーナ" src="images/26_90_ダニエルズ_アマトリチャーナ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_91_西京極総合運動公園" src="images/26_91_西京極総合運動公園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_92_FUKUCHA" src="images/26_92_FUKUCHA.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_93_京都勝牛" src="images/26_93_京都勝牛.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_94_舞鶴港とれとれセンター" src="images/26_94_舞鶴港とれとれセンター.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_95_アラビカ" src="images/26_95_アラビカ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_96_マリベル" src="images/26_96_マリベル.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_97_いっかくじゅう" src="images/26_97_いっかくじゅう.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_98_梅宮神社" src="images/26_98_梅宮神社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="26_99_無鄰庵" src="images/26_99_無鄰庵.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="31_01_水木しげるロード" src="images/31_01_水木しげるロード.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="31_02_水木しげるロード" src="images/31_02_水木しげるロード.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="31_03_水木しげるロード" src="images/31_03_水木しげるロード.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="31_04_鳥取砂丘" src="images/31_04_鳥取砂丘.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="31_05_砂場コーヒー" src="images/31_05_砂場コーヒー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="32_01_出雲大社" src="images/32_01_出雲大社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="32_02_出雲大社" src="images/32_02_出雲大社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="33_01_岡山後楽園" src="images/33_01_岡山後楽園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="33_02_岡山後楽園" src="images/33_02_岡山後楽園.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="33_03_岡山城" src="images/33_03_岡山城.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="33_04_鳥城公園" src="images/33_04_鳥城公園.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="33_05_桃太郎" src="images/33_05_桃太郎.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="33_06_岡山市内" src="images/33_06_岡山市内.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="33_07_岡山市内" src="images/33_07_岡山市内.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="34_01_しまなみ海道" src="images/34_01_しまなみ海道.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="34_02_しまなみ海道" src="images/34_02_しまなみ海道.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="34_03_お好み焼き" src="images/34_03_お好み焼き.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="34_04_宮島フェリー" src="images/34_04_宮島フェリー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="34_05_宮島" src="images/34_05_宮島.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="34_06_厳島神社" src="images/34_06_厳島神社.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="34_07_広島駅_つけ麺" src="images/34_07_広島駅_つけ麺.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_01_元祖瓦そばたかせ" src="images/35_01_元祖瓦そばたかせ.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_02_ふくの河久" src="images/35_02_ふくの河久.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_03_角島大橋" src="images/35_03_角島大橋.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_04_秋吉洞" src="images/35_04_秋吉洞.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_05_秋吉洞" src="images/35_05_秋吉洞.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_06_唐戸市場" src="images/35_06_唐戸市場.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_07_唐戸市場" src="images/35_07_唐戸市場.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_08_巌流島" src="images/35_08_巌流島.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_09_餃子" src="images/35_09_餃子.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_10_新門司港" src="images/35_10_新門司港.jpg" style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_11_九州フェリー" src="images/35_11_九州フェリー.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_12_唐戸ターミナル" src="images/35_12_唐戸ターミナル.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
+    <img id="35_13_青春交響の塔" src="images/35_13_青春交響の塔.jpg"
+        style="width: 1px; height: 1px; position: absolute; top: -1000px;">
 
-    <script>
 
-        // 「全て」にチェックを入れれば、他のチェックボックスも自動でチェックされる。「全て」のチェックを外せば、他のチェックボックスも自動で外れる。
-        document.getElementById('allcheck').addEventListener('click', checkall);
-        document.getElementById('alluncheck').addEventListener('click', uncheckall);
+    <script src="travel_log.js"></script>
 
-        document.getElementById('restaurants').addEventListener('change', filterMarkers);
-        document.getElementById('tourist-attractions').addEventListener('change', filterMarkers);
-
-
-        var map = L.map('map').setView([35.02352791752294, 135.7633984809353], 5);//デフォルト13
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-        var MAP_MAKERS = {};
-
-        var explainInfo = {};
-
-        async function loadJson() {
-            try {
-                const response = await fetch('docs/explain.json');
-                explainInfo = await response.json();
-                updateMarkers();
-            } catch (error) {
-                console.error('Failed to load JSON:', error);
-            }
-        }
-
-        function updateMarkers() {
-            const imageElements = document.images;
-            for (let i = 0; i < imageElements.length; i++) {
-                const imageElement = imageElements[i];
-                let info = explainInfo[imageElement.id];
-                if (imageElement.complete) {
-                    addImageMarker(imageElement, imageElement.id, info);
-                } else {
-                    imageElement.onload = function () {
-                        addImageMarker(imageElement, imageElement.id, info);
-                    }
-                }
-            }
-            filterMarkers();
-        }
-
-        function addImageMarker(imageElement, imageName, explainInfo) {
-            EXIF.getData(imageElement, function () {
-                var lat = EXIF.getTag(this, "GPSLatitude");
-                var lon = EXIF.getTag(this, "GPSLongitude");
-
-                if (lat && lon) {
-                    var latRef = EXIF.getTag(this, "GPSLatitudeRef") || "N";
-                    var lonRef = EXIF.getTag(this, "GPSLongitudeRef") || "E";
-                    lat = (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1);
-                    lon = (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1);
-
-                    var imageIcon = L.icon({
-                        iconUrl: 'images/' + imageName + '.jpg',
-                        iconSize: [50, 50],
-                        iconAnchor: [25, 25]
-                    });
-
-                    var marker = L.marker([lat, lon], { icon: imageIcon }).addTo(map);
-                    MAP_MAKERS[imageName] = marker;
-                    if (explainInfo) {
-                        display_str = make_title_display_str(explainInfo);
-                        marker.bindPopup(display_str);
-                    }
-                }
-            });
-        }
-
-        function removeMarkers(imageName) {
-            MAP_MAKERS[imageName].remove();
-        }
-
-        function checkall() {
-            const showRestaurants = document.getElementById('restaurants').checked;
-            const showAttractions = document.getElementById('tourist-attractions').checked;
-            document.getElementById('restaurants').checked = true;
-            document.getElementById('tourist-attractions').checked = true;
-            filterMarkers()
-        }
-
-        function uncheckall() {
-            const showRestaurants = document.getElementById('restaurants').checked;
-            const showAttractions = document.getElementById('tourist-attractions').checked;
-            document.getElementById('restaurants').checked = false;
-            document.getElementById('tourist-attractions').checked = false;
-            filterMarkers()
-        }
-
-        function filterMarkers() {
-            const showRestaurants = document.getElementById('restaurants').checked;
-            const showAttractions = document.getElementById('tourist-attractions').checked;
-
-            for (let imageName in MAP_MAKERS) {
-                const marker = MAP_MAKERS[imageName];
-                const info = explainInfo[imageName];
-
-                if ((showRestaurants && info.tags.includes("飲食店")) || (showAttractions && info.tags.includes("観光地"))) {
-                    marker.addTo(map);
-                } else {
-                    marker.remove();
-                }
-            }
-        }
-
-        function make_title_display_str(explainInfo) {
-            var title = '<h2>' + explainInfo.title + '</h2>';
-            var description = explainInfo.description ? '<p>' + explainInfo.description + '</p>' : '';
-            var url = explainInfo.url ? '<a href="' + explainInfo.url + '" target="_blank">詳細を見る</a>' : '';
-            var image = '<br><a href="images/' + explainInfo.image_name + '" data-lightbox="image-' + explainInfo.image_name + '">画像を拡大</a>';
-            return title + description + url + image;
-        }
-        // var zoomLevel = map.getZoom();
-        // console.log('Zoom Level:', zoomLevel);
-        loadJson();
-    </script>
 </body>
 
 </html>

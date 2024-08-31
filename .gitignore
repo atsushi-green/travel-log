@@ -1,6 +1,5 @@
 .DS_Store
-original_images/*.jpg
-original_images/*.jpeg
-original_images/*.HEIC
+original_images/*
+original_images/!.gitkeep
 obsolete
 html_tags.txt

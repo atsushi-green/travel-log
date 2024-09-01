@@ -131,7 +131,7 @@ function addImageMarker(imageElement, imageName, explainInfo) {
             var thisImageEmbedded = false;
             for (let zoomLevel = 0; zoomLevel <= 12; zoomLevel++) {
                 // 画面の幅
-                let width = 360 / ((zoomLevel + 1) * (zoomLevel + 1));
+                let width = 360 / (2 ** zoomLevel);
                 // ざっくり、画面の幅が5等分になるくらいのグリッドにする
                 let grid_width = width / NUM_GRID
 
@@ -142,11 +142,10 @@ function addImageMarker(imageElement, imageName, explainInfo) {
 
                 let = area_index = lat_idx * num_grid_ + lon_idx;
                 // 今のズームレベルでの区画で初めてなら入れる。
-                // TODO: ただし、&& 条件として、この画像が入れられたら次のZoom Levelでは入れないようにする
+                // ただし、&& 条件として、この画像が入れられたら次のZoom Levelでは入れないようにする
                 if (!area_set_by_zoom[zoomLevel].has(area_index)) {
                     area_set_by_zoom[zoomLevel].add(area_index);
                     if (!thisImageEmbedded) {
-                        console.log("embed in ", zoomLevel, imageElement.id)
                         REPRESENTATIVE_IMAGE_NAMES_BY_LEVEL[zoomLevel].push(imageElement.id);
                         thisImageEmbedded = true;
 
@@ -159,12 +158,6 @@ function addImageMarker(imageElement, imageName, explainInfo) {
 
                 }
 
-                // 現在の左下の座標から、画像の座標がどの区画に入るかを計算
-                // CURRENT_LATITUDE
-                // CURRENT_LONGITUDE
-                // // 長さがNUM_GRID + 1の配列（NUM_GRID個の領域）を作る
-                // var lat_grids = Array.apply(null, new Array(NUM_GRID + 1)).map(function (v, i) { return CURRENT_LATITUDE + (i * grid_width); });
-                // var lon_grids = Array.apply(null, new Array(NUM_GRID + 1)).map(function (v, i) { return CURRENT_LONGITUDE + (i * grid_width); });
             }
             // for文が終わっても、thisImageEmbeddedがfalseなら、最後のズームレベルに入れる
             if (!thisImageEmbedded) {

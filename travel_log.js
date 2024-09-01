@@ -126,8 +126,7 @@ function addImageMarker(imageElement, imageName, explainInfo) {
             // 非同期処理であるから、ここでズームレベルに応じた処理を行う必要がある。
             // TODO: 処理の見通しが悪いので、あとでリファクタリングする
             // ---------------------
-            // console.log(imageElement.id)
-            // TODO: imageElementという画像を、以下のzoomLevelのどれか一つだけに入れる
+            // imageElementという画像を、以下のzoomLevelのどれか一つだけに入れる
             var thisImageEmbedded = false;
             for (let zoomLevel = 0; zoomLevel <= 12; zoomLevel++) {
                 // 画面の幅
@@ -170,7 +169,6 @@ function addImageMarker(imageElement, imageName, explainInfo) {
 
         }
     });
-    console.log(REPRESENTATIVE_IMAGE_NAMES_BY_LEVEL)
 }
 
 

@@ -114,6 +114,16 @@ function addImageMarker(imageElement, imageName, explainInfo) {
                 iconSize: [50, 50],
                 iconAnchor: [25, 25]
             });
+
+            // FIXME: ズームするとズレるので直す必要がある
+            var circle = L.circle([lat, lon], {
+                color: "#F26649",
+                fillColor: "#F26649",
+                fillOpacity: 0.5,
+                radius: 10
+            }).addTo(map);
+
+
             var marker = L.marker([lat, lon], { icon: imageIcon }).addTo(map);
             numShownImages++;
             marker.getElement().style.border = '2px solid white';

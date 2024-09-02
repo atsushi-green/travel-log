@@ -1335,6 +1335,97 @@
         ],
         "url": "https://www.ashikaga.co.jp/"
     },
+    "10_01_草津温泉": {
+        "title": "草津温泉",
+        "date": "2020-03-15",
+        "image_name": "10_01_草津温泉.jpg",
+        "description": "ものすごい酸性の温泉です。湯もみの見学や体験もできます。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.kusatsu-onsen.ne.jp/portal/"
+    },
+    "10_02_四万川ダム": {
+        "title": "四万川ダム",
+        "date": "2020-03-15",
+        "image_name": "10_02_四万川ダム.jpg",
+        "description": "ダム建設の歴史を調べると、多くの犠牲のもと出来上がったものだと知ります。<br>壮観な景色でした。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.pref.gunma.jp/page/19300.html"
+    },
+    "10_03_十割そば": {
+        "title": "十割そば",
+        "date": "2020-03-15",
+        "image_name": "10_03_十割そば.jpg",
+        "description": "草津温泉街の適当なお店でいただきました。蕎麦の風味が強く感じられおいしかったです。",
+        "tags": [
+            "飲食店"
+        ],
+        "url": ""
+    },
+    "10_04_草津温泉": {
+        "title": "草津温泉",
+        "date": "2020-03-15",
+        "image_name": "10_04_草津温泉.jpg",
+        "description": "ものすごい酸性の温泉です。湯もみの見学や体験もできます。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.kusatsu-onsen.ne.jp/portal/"
+    },
+    "10_05_どんぐり": {
+        "title": "どんぐり 洋食屋さん",
+        "date": "2020-03-15",
+        "image_name": "10_05_どんぐり.jpg",
+        "description": "店内の雰囲気もよく、美味しい洋食屋さんです。スープなどがついたセットメニューをいただきました。<br>雪が降っていたときに訪れたこともあり、心身温まりました。",
+        "tags": [
+            "飲食店"
+        ],
+        "url": "https://tabelog.com/gunma/A1004/A100402/10000521/"
+    },
+    "10_06_草津温泉_湯もみ": {
+        "title": "草津温泉 湯もみ",
+        "date": "2020-03-15",
+        "image_name": "10_06_草津温泉_湯もみ.jpg",
+        "description": "草津温泉では湯もみの見学や体験もできます。湯を揉むことで、お湯の温度を適度に下げているようです。<br>板には「くさつ」と書かれています。いくら温泉街で硫黄の匂いがするからといって、「クサっ！」って直接書いてあるわけがありません。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.kusatsu-onsen.ne.jp/portal/"
+    },
+    "11_01_川越まつり会館": {
+        "title": "川越まつり会館",
+        "date": "2015-09-16",
+        "image_name": "11_01_川越まつり会館.jpg",
+        "description": "川越まつりの歴史などについて学ぶことができます。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.city.kawagoe.saitama.jp/smph/shisetsu/kanko/kanko_asobu/matsurikaikan.html"
+    },
+    "11_02_秩父味噌新井武平商店": {
+        "title": "秩父味噌 新井武平商店",
+        "date": "2015-09-16",
+        "image_name": "11_02_秩父味噌新井武平商店.jpg",
+        "description": "お味噌屋さんです。この田楽団子は是非食べてみてください。<br>お土産にお味噌を買っても良し。",
+        "tags": [
+            "飲食店",
+            "観光地"
+        ],
+        "url": "https://www.chichibu-miso.jp/?srsltid=AfmBOorIWFCD38qFJcKCeFbBAOylLn51N6NHZR3zhtYPSCUX-6M1tlI7"
+    },
+    "11_03_時の鐘": {
+        "title": "時の鐘",
+        "date": "2015-09-16",
+        "image_name": "11_03_時の鐘.jpg",
+        "description": "川越のシンボルです。「小京都」と言われるところが日本各地にありますが、その一つです。<br>1日4回、午前6時・正午・午後3時・午後6時に鐘が鳴ります。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.city.kawagoe.saitama.jp/smph/welcome/kankospot/kurazukurizone/tokinokane.html"
+    },
     "12_01_川豊_うなぎ": {
         "title": "川豊 うなぎ",
         "date": "2022-11-25",

@@ -231,6 +231,7 @@ map.on('zoomend', function () {
                 let imageName = imageNames[i];
                 const marker = MAP_MAKERS[imageName];
                 marker.addTo(map);
+                marker.getElement().style.border = '2px solid white';
                 numShownImages++;
             }
         }

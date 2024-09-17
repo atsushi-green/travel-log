@@ -2011,6 +2011,291 @@
         ],
         "url": "https://www.gransta.jp/"
     },
+    "14_01_横浜赤レンガ倉庫": {
+        "title": "横浜赤レンガ倉庫",
+        "date": "2021-09-05",
+        "image_name": "14_01_横浜赤レンガ倉庫.jpg",
+        "description": "おしゃれなカフェやレストランが入っています。外から眺めていても綺麗ですよね。<br>たまにこの辺りでイベントをやっています。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.yokohama-akarenga.jp/"
+    },
+    "14_02_みなとみらい": {
+        "title": "みなとみらい",
+        "date": "2021-09-05",
+        "image_name": "14_02_みなとみらい.jpg",
+        "description": "この位置からなら、ランドマークタワー、インターコンチネンタルホテル、コスモスクエアなどの横浜の街を代表する景色を見ることができます。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.yokohama-landmark.jp/"
+    },
+    "14_03_長谷寺": {
+        "title": "長谷寺",
+        "date": "2023-08-23",
+        "image_name": "14_03_長谷寺.jpg",
+        "description": "鎌倉の江ノ電で行くとアクセスが良いです。江ノ電沿線は景色が良いので、電車を使わずに沿線を散歩するのもお勧めです。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.hasedera.jp/"
+    },
+    "14_04_城南島海浜公園": {
+        "title": "城南島海浜公園",
+        "date": "2021-02-21",
+        "image_name": "14_04_城南島海浜公園.jpg",
+        "description": "羽田空港を飛び立つ飛行機を間近で見れるスポットです。電車とバスで行くことになりますが、たくさんの飛行機を見ることができます。海辺なので、冬は寒いところが注意です。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://seaside-park.jp/park_jonan/"
+    },
+    "14_05_等々力渓谷公園": {
+        "title": "等々力渓谷公園",
+        "date": "2021-02-21",
+        "image_name": "14_05_等々力渓谷公園.jpg",
+        "description": "都内で自然を感じることができるスポットです。東急沿線です。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.city.setagaya.lg.jp/02075/9082.html"
+    },
+    "14_06_かわさき宇と緑の科学館": {
+        "title": "かわさき宇と緑の科学館",
+        "date": "2021-03-28",
+        "image_name": "14_06_かわさき宇と緑の科学館.jpg",
+        "description": "ちょっとしたプラネタリウムを見ることができます。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.city.kawasaki.jp/880/page/0000042985.html"
+    },
+    "14_07_稲村ヶ崎": {
+        "title": "稲村ヶ崎",
+        "date": "2021-03-28",
+        "image_name": "14_07_稲村ヶ崎.jpg",
+        "description": "富士山を見る有名スポットです。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://fujisantotomoni.jp/spot/%E7%A8%B2%E6%9D%91%E3%83%B6%E5%B4%8E"
+    },
+    "14_08_イワタコーヒー店": {
+        "title": "イワタコーヒー店",
+        "date": "2021-03-28",
+        "image_name": "14_08_イワタコーヒー店.jpg",
+        "description": "昔ながらのパンケーキが美味しいです。量が多いので、2人でシェアしても良いですが、程よい甘さなので1人でも食べきれます。",
+        "tags": [
+            "飲食店",
+            "観光地"
+        ],
+        "url": "https://www.iwatacoffee.com/"
+    },
+    "14_09_江ノ島シーキャンドル": {
+        "title": "江ノ島シーキャンドル",
+        "date": "2019-05-11",
+        "image_name": "14_09_江ノ島シーキャンドル.jpg",
+        "description": "江ノ島のシンボルです。クリスマスの時期はライトアップが綺麗です。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://enoshima-seacandle.com/"
+    },
+    "14_10_横浜中華街": {
+        "title": "横浜中華街",
+        "date": "2015-09-17",
+        "image_name": "14_10_横浜中華街.jpg",
+        "description": "横浜の中華街は基本イートインです。食べ放題のお店が軒を連ねています。",
+        "tags": [
+            "観光地",
+            "飲食店"
+        ],
+        "url": "https://www.chinatown.or.jp/"
+    },
+    "14_11_トラットリアダケンゾー": {
+        "title": "トラットリア ダケンゾー",
+        "date": "2021-09-05",
+        "image_name": "14_11_トラットリアダケンゾー.jpg",
+        "description": "みなとみらいエリアにあるイタリアンです。その時々の食材の料理が美味しいです。カルパッチョはイチオシです！",
+        "tags": [
+            "飲食店"
+        ],
+        "url": "https://chefpartners.jp/archives/chef/kenzo_nishzawa#google_vignette"
+    },
+    "14_12_茅ヶ崎サザン芸術花火": {
+        "title": "茅ヶ崎サザン芸術花火",
+        "date": "2023-10-21",
+        "image_name": "14_12_茅ヶ崎サザン芸術花火.jpg",
+        "description": "サザンオールスターズの曲に合わせて花火が打ち上がるイベントです。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://southern-hanabi.com/mob/index.php?site=SASHNB&ima=3222"
+    },
+    "14_13_横浜中華街": {
+        "title": "横浜中華街",
+        "date": "2019-09-14",
+        "image_name": "14_13_横浜中華街.jpg",
+        "description": "横浜の中華街は基本イートインです。食べ放題のお店が軒を連ねています。",
+        "tags": [
+            "観光地",
+            "飲食店"
+        ],
+        "url": "https://www.chinatown.or.jp/"
+    },
+    "14_14_オステリアアウストロ": {
+        "title": "オステリア アウストロ",
+        "date": "2019-09-14",
+        "image_name": "14_14_オステリアアウストロ.jpg",
+        "description": "ジビエ料理のイタリアンです。ヒグマのジビエをいただきました。ジビエ特有の臭みがなく、美味しかったです。",
+        "tags": [
+            "飲食店"
+        ],
+        "url": "https://www.austro.jp/?gclid=CjwKCAjw_4S3BhAAEiwA_64YhsjBZ2PVIXbDD-NMsBzpDhbfzBrmwfKR3BLuTXqu2M-y3T2efQFy3xoC6IgQAvD_BwE"
+    },
+    "14_15_シェイクシャック": {
+        "title": "シェイクシャック",
+        "date": "2019-09-14",
+        "image_name": "14_15_シェイクシャック.jpg",
+        "description": "ここのハンバーガーは美味しいです！",
+        "tags": [
+            "飲食店"
+        ],
+        "url": "https://shakeshack.jp/locations/minatomirai/"
+    },
+    "14_16_アニヴェルセルみなとみらい横浜": {
+        "title": "アニヴェルセル みなとみらい横浜",
+        "date": "2019-09-14",
+        "image_name": "14_16_アニヴェルセルみなとみらい横浜.jpg",
+        "description": "結婚式場ですが、カフェは誰でも入れます。",
+        "tags": [
+            "飲食店",
+            "観光地"
+        ],
+        "url": "https://cafe.anniversaire.co.jp/minatomirai/"
+    },
+    "14_17_横浜コスモワールド": {
+        "title": "横浜コスモワールド",
+        "date": "2019-09-14",
+        "image_name": "14_17_横浜コスモワールド.jpg",
+        "description": "ちょっとした遊園地くらいの規模ですが、結構楽しめます。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "http://cosmoworld.jp/"
+    },
+    "14_18_菌屋": {
+        "title": "菌屋",
+        "date": "2019-11-29",
+        "image_name": "14_18_菌屋.jpg",
+        "description": "菌屋という名前が気になって入りました。きのこ料理がいただけるのかと思いきや、発酵がテーマの料理屋さんでした。<br>移転したようなので、場所に注意です。",
+        "tags": [
+            "飲食店"
+        ],
+        "url": "https://tabelog.com/kanagawa/A1405/A140505/14067152/"
+    },
+    "14_19_あざみ野うかい亭": {
+        "title": "あざみ野うかい亭",
+        "date": "2024-02-18",
+        "image_name": "14_19_あざみ野うかい亭.jpg",
+        "description": "クッキーで有名な「うかい」が経営する鉄板料理屋さんです。お肉やお魚が美味しいことは言わずもがなですが、ガーデンや室内がとても綺麗です。<br>デザートは部屋を移動して、違う雰囲気で甘味を味わうことができます。時期が合えばピアノの生演奏も聴けるそうです。",
+        "tags": [
+            "飲食店"
+        ],
+        "url": "https://www.ukai.co.jp/azamino/"
+    },
+    "14_20_鶴岡八幡宮": {
+        "title": "鶴岡八幡宮",
+        "date": "2021-12-25",
+        "image_name": "14_20_鶴岡八幡宮.jpg",
+        "description": "特に説明はないです！",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.hachimangu.or.jp/"
+    },
+    "14_21_江ノ島": {
+        "title": "江ノ島",
+        "date": "2021-12-25",
+        "image_name": "14_21_江ノ島.jpg",
+        "description": "クリスマスのライトアップです。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://enoshima-seacandle.com/"
+    },
+    "14_22_池田丸": {
+        "title": "池田丸",
+        "date": "2020-02-29",
+        "image_name": "14_22_池田丸.jpg",
+        "description": "江ノ島の近くにある定食屋さんです。煮魚も美味しいし、お造りも美味しいです。",
+        "tags": [
+            "飲食店"
+        ],
+        "url": "https://tabelog.com/kanagawa/A1404/A140403/14000281/"
+    },
+    "14_23_inamuracafe": {
+        "title": "inamuracafe",
+        "date": "2020-02-29",
+        "image_name": "14_23_inamuracafe.jpg",
+        "description": "江ノ島の近くにあるケーキ屋さんです。ケーキめっちゃ美味しかったです。",
+        "tags": [
+            "飲食店",
+            "観光地"
+        ],
+        "url": "https://tabelog.com/kanagawa/A1404/A140402/14062152/dtlphotolst/smp2/"
+    },
+    "14_24_箱根湯本": {
+        "title": "箱根湯本",
+        "date": "2021-06-14",
+        "image_name": "14_24_箱根湯本.jpg",
+        "description": "箱根温泉へ向かうために降り立った駅です。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "http://www.hakoneyumoto.com/"
+    },
+    "14_25_箱根風雅": {
+        "title": "箱根風雅",
+        "date": "2021-06-14",
+        "image_name": "14_25_箱根風雅.jpg",
+        "description": "箱根温泉です。部屋の中に露天風呂がある贅沢な部屋に宿泊しました。食事も美味しかったです。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.hakone-fuga.com/"
+    },
+    "14_26_箱根風雅": {
+        "title": "箱根風雅",
+        "date": "2021-06-14",
+        "image_name": "14_26_箱根風雅.jpg",
+        "description": "箱根温泉です。部屋の中に露天風呂がある贅沢な部屋に宿泊しました。食事も美味しかったです。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.hakone-fuga.com/"
+    },
+    "14_27_箱根湿生生花園": {
+        "title": "箱根湿生生花園",
+        "date": "2021-06-14",
+        "image_name": "14_27_箱根湿生生花園.jpg",
+        "description": "植物園みたいな感じです。6月にいったので、紫陽花が綺麗でした。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://hakone-shisseikaen.com/"
+    },
+    "14_28_北鎌倉古民家ミュージアム": {
+        "title": "北鎌倉古民家ミュージアム",
+        "date": "2021-06-14",
+        "image_name": "14_28_北鎌倉古民家ミュージアム.jpg",
+        "description": "鎌倉にある古民家を改装したミュージアムです。",
+        "tags": [
+            "観光地"
+        ],
+        "url": "https://www.kominka-museum.com/"
+    },
     "15_01_新潟駅_ぽんしゅ館": {
         "title": "新潟駅 ぽんしゅ館",
         "date": "2015-09-22",

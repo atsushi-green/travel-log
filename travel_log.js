@@ -86,8 +86,12 @@ function updateMarkers() {
     for (let i = 0; i < imageElements.length; i++) {
         const imageElement = imageElements[i];
         let info = explainInfo[imageElement.id];
-        imageElement.onload = function () {
+        if (imageElement.complete) {
             addImageMarker(imageElement, imageElement.id, info);
+        } else {
+            imageElement.onload = function () {
+                addImageMarker(imageElement, imageElement.id, info);
+            }
         }
     }
     filterMarkers();
@@ -108,14 +112,15 @@ function addImageMarker(imageElement, imageName, explainInfo) {
             var imageIcon = L.icon({
                 iconUrl: 'images/' + imageName + '.jpg',
                 iconSize: [50, 50],
-                // iconAnchor: [25, 25]
+                iconAnchor: [25, 25]
             });
 
-            L.circleMarker([lat, lon], {
-                color: '#F26649',
-                fillColor: '#F26649',
+            // FIXME: ズームするとズレるので直す必要がある
+            var circle = L.circle([lat, lon], {
+                color: "#F26649",
+                fillColor: "#F26649",
                 fillOpacity: 0.5,
-                radius: 5
+                radius: 10
             }).addTo(map);
 
 
